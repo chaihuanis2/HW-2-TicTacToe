@@ -1,5 +1,10 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './styles.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Game from './App'; // Assuming your main component is exported as 'Game'
 
-import App from './App';
+ReactDOM.render(
+  <React.StrictMode>
+    <Game />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
